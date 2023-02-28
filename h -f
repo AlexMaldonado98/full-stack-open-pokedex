@@ -1,0 +1,255 @@
+[33mcommit c0b37ce1f9512736518aae8067d8967195494fc0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Mon Feb 27 20:29:49 2023 -0600
+
+    exercise 11.13 adding pull_request trigger
+
+[33mcommit 740a31485dd0f7eb627f28da212caa89aa54fc13[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Sun Feb 26 16:25:34 2023 -0600
+
+    exercise 11.12 Custom health check script returning to http_checks
+
+[33mcommit 93ba0db7f02a9b5c8acefe943851e0a487d7bc90[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Sun Feb 26 14:06:01 2023 -0600
+
+    exercise 11.12. Custom health check script
+
+[33mcommit 360bc0160ade77c4cf9a48ef413078cad987fda6[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Sun Feb 26 13:01:38 2023 -0600
+
+    exercise 11.11 No broken version
+
+[33mcommit 584b4535d1bce368b1d4687bc8c3d1340f54f9ff[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Sun Feb 26 12:46:39 2023 -0600
+
+    exercise 11.11 Broken version Throw Error
+
+[33mcommit bb09f70eaf55973740c85072e3ee5f673fd3f2e1[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Sun Feb 26 12:33:03 2023 -0600
+
+    exercise 11.11 Health check and rollback
+
+[33mcommit 1abae33edaecfd6b26f0302d10491ea57e1f0609[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Sun Feb 26 12:02:22 2023 -0600
+
+    exercise 11.10 Deploying your application to Fly.io
+
+[33mcommit b5ac04deada134125d483dd0c42f7bb8dfef3ea2[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Fri Feb 24 18:33:59 2023 -0600
+
+    exercise 11.9 Simple end to end -tests
+
+[33mcommit 085b8a3027a79fdc96ca7d2a12cddc26fbc9495d[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Fri Feb 24 17:53:10 2023 -0600
+
+    exercise 11.8 Back to green
+
+[33mcommit ea49a998ebf119cdb78914f244dc3cde460c2a87[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Fri Feb 24 17:42:11 2023 -0600
+
+    exerci 11.7 Building and testing
+
+[33mcommit 64670f920b1d023303b701f1d342ddb18907f606[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Fri Feb 24 17:36:50 2023 -0600
+
+    exercise 11.6 Fix the code
+
+[33mcommit bb2ecae78fa7424abae1f5a02ba1e758ab6e71b7[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Fri Feb 24 17:26:49 2023 -0600
+
+    exercise 11.5 Linting workflow
+
+[33mcommit d79969b84a08006b9c82a041e0dd4b174777bcd1[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Fri Feb 24 17:10:36 2023 -0600
+
+    exercise 10.4 Date and directory contents steps
+
+[33mcommit 0aa5b7266d9fb4c738a49857984441c70d17b2c7[m
+Author: Alex Maldonado Noh <alex.maldonado2919@gmail.com>
+Date:   Fri Feb 24 16:24:34 2023 -0600
+
+    exercise 10.1, 10.2 and 10.3 adding a new workflow "Hello world" to full-stack-open-pokedex repository
+
+[33mcommit 94c395bdd936884175b232bd9fe4374ba1cb5f3f[m
+Merge: a9880b6 69a75b3
+Author: Tomi Hiltunen <tomi@smartly.io>
+Date:   Fri Sep 16 15:41:43 2022 +0300
+
+    Merge pull request #458 from mluukkai/patch-1
+    
+    Update App.jest.spec.jsx
+
+[33mcommit a9880b6a059f3c1e44d22a14aced76f5ffb0c5ac[m
+Merge: ef1abec 1d69e73
+Author: Tomi Hiltunen <tomi@smartly.io>
+Date:   Fri Sep 16 15:41:30 2022 +0300
+
+    Merge pull request #459 from mluukkai/patch-2
+    
+    Update App.jsx
+
+[33mcommit 1d69e73ea42eaa509d34fe12533673d148c8793d[m
+Author: Matti Luukkainen <mluukkai@iki.fi>
+Date:   Fri Sep 16 11:08:27 2022 +0300
+
+    Update App.jsx
+
+[33mcommit 69a75b35c7e0e9d7db46d94abf18656e2790790d[m
+Author: Matti Luukkainen <mluukkai@iki.fi>
+Date:   Fri Sep 16 11:06:53 2022 +0300
+
+    Update App.jest.spec.jsx
+
+[33mcommit ef1abecff5f695e7ff55827b5d0a3aead5c196c9[m
+Merge: 66de1c4 83e3f6a
+Author: Anton Rautio <anton.rautio@smartly.io>
+Date:   Wed Oct 14 15:37:09 2020 +0300
+
+    Merge pull request #12 from smartlyio/serve-production-build
+    
+    Add command to serve production build
+
+[33mcommit 83e3f6acb00d02e7d0b4fc23320877167d34d036[m
+Author: Anton Rautio <antonrautio@Antons-MacBook-Pro.local>
+Date:   Wed Oct 14 11:02:00 2020 +0300
+
+    Add command to serve production build
+
+[33mcommit 66de1c4a948e520081dc83f5513a497ff8c77989[m
+Merge: 033f5e2 dafc670
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Thu Oct 8 06:53:18 2020 +0200
+
+    Merge pull request #11 from smartlyio/dependabot/npm_and_yarn/websocket-extensions-0.1.4
+    
+    Bump websocket-extensions from 0.1.3 to 0.1.4
+
+[33mcommit dafc67031897158f4d37f90c4382436cc9c1d8bd[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Thu Oct 8 04:52:16 2020 +0000
+
+    Bump websocket-extensions from 0.1.3 to 0.1.4
+    
+    Bumps [websocket-extensions](https://github.com/faye/websocket-extensions-node) from 0.1.3 to 0.1.4.
+    - [Release notes](https://github.com/faye/websocket-extensions-node/releases)
+    - [Changelog](https://github.com/faye/websocket-extensions-node/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/faye/websocket-extensions-node/compare/0.1.3...0.1.4)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 033f5e2001332b0e0e3447b2fd3058022984493c[m
+Merge: eabc27c 1be9178
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Wed Oct 7 15:35:58 2020 +0200
+
+    Merge pull request #10 from smartlyio/update-deps
+    
+    Update deps
+
+[33mcommit 1be9178982f45d18856c15399182ed266d07150e[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Wed Oct 7 16:35:27 2020 +0300
+
+    Update deps
+
+[33mcommit eabc27cf440a04c05baa64eb24bfcdc42696a803[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Thu Jul 23 07:58:16 2020 +0200
+
+    Update README
+
+[33mcommit 48f1787318aeb1fd9d0759c89ead878811aeaa51[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Tue Jun 2 11:03:11 2020 +0300
+
+    Minor css improvement
+
+[33mcommit 617a0b1c839cc38c7d8a540d7dd2508304b8d97f[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Tue Jun 2 10:40:49 2020 +0300
+
+    Clean up PokemonPage props
+
+[33mcommit 51e0ab448ba3c123f45179fb8f9c791634893d17[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Tue Jun 2 10:14:34 2020 +0300
+
+    Improve tests
+
+[33mcommit bd4cccdd50186a2444c6ef5d53686354b1c106bf[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Tue Jun 2 10:06:56 2020 +0300
+
+    Extract formatName function and PokemonAbility
+
+[33mcommit 3ebfcbc23388794b686d64972c704726ecf1b1fc[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Tue Jun 2 09:37:06 2020 +0300
+
+    Rename Loader to LoadingSpinner
+
+[33mcommit 075150230b6d03c2a44d6660a2e4480b9c7e7edb[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Tue Jun 2 09:35:17 2020 +0300
+
+    Rename pokemons to pokemon
+
+[33mcommit 91be4738baa2223406c7c1491845e996dabf8747[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Wed May 27 15:49:06 2020 +0300
+
+    Update README
+
+[33mcommit d6422c789597e1dd383c86db247138fecae58a01[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Wed May 27 15:24:16 2020 +0300
+
+    Add tests
+
+[33mcommit 8179654d1456a87f457a9219095ea479e341881b[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Wed May 27 08:49:59 2020 +0300
+
+    Fix vulnerabilities
+
+[33mcommit fc2a3784f752d096a0297f5a7a58f8c4d46669b1[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Thu May 14 15:12:27 2020 +0300
+
+    App v1
+
+[33mcommit 0d8311b26018723309ee6642625a1460c401eb90[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Wed May 13 10:26:09 2020 +0300
+
+    Move index.html to /public
+
+[33mcommit 9da588b92d6a1be951bee41f55c4a482e2e9944c[m
+Author: Anna Osipova <anna.osipova@smartly.io>
+Date:   Wed May 13 10:23:00 2020 +0300
+
+    Add same eslint config as in course module 5
+
+[33mcommit a07e50efc9b0972295f7263c74bc80be3330b138[m
+Author: Anton Rautio <antonrautio@Antons-MacBook-Pro.local>
+Date:   Mon May 4 18:56:40 2020 +0300
+
+    Add initial react setup, eslint, jest
+
+[33mcommit 97e41da6b650983f2db479d227a5472c93756525[m
+Author: Anton Rautio <anton.rautio@smartly.io>
+Date:   Mon May 4 18:22:19 2020 +0300
+
+    Initial commit
