@@ -33,9 +33,9 @@ jobs:
           start: npm run start-prod
           wait-on: http://localhost:5000
       - uses: superfly/flyctl-actions/setup-flyctl@master
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message,' '),'#skip')}}
       - run: flyctl deploy --remote-only
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message,' '),'#skip') }}
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
 
@@ -58,13 +58,13 @@ jobs:
 
   tag_release:
     needs: [simple_deployment_pipeline]
+    if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message,' '),'#skip')}}
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: '0'
       - name: Bump version and push tag
-        if: ${{ github.event_name == 'push'}}
         uses: anothrNick/github-tag-action@1.61.0
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
