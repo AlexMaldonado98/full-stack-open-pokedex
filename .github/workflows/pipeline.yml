@@ -11,6 +11,14 @@ on:
 
 jobs: 
 
+  avoid_reduncy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Cancel Previus Redundant Builds
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{github.token}}
+
   lint:
     runs-on: ubuntu-20.04
     steps:
@@ -94,7 +102,6 @@ jobs:
           start: npm run start-prod
           wait-on: http://localhost:5000
       
-
   simple_deployment_pipeline:
     needs: [test,test-e2e]
     if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message,' '),'#skip')}}
