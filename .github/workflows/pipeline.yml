@@ -54,18 +54,13 @@ jobs:
         with:
           name: dist
           path: dist
-
-  build-failed-notification:
-    needs: [build, lint]
-    runs-on: ubuntu-20.04
-    steps:
       - name: Build fieled notification
         uses: rjstone/discord-webhook-notify@v1
         if: failure()
         with:
             severity: error
             details: Build Failed!!!
-            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}  
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
 
   test:
     needs: [build, lint]
@@ -87,6 +82,13 @@ jobs:
           path: dist
       - name: test
         run: npm run test
+      - name: Test fieled notification
+        uses: rjstone/discord-webhook-notify@v1
+        if: failure()
+        with:
+            severity: error
+            details: Test Failed!!!
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
     
   test-e2e:
     needs: [build, lint]
@@ -112,6 +114,13 @@ jobs:
           build: npm run build
           start: npm run start-prod
           wait-on: http://localhost:5000
+      - name: Test fieled notification
+        uses: rjstone/discord-webhook-notify@v1
+        if: failure()
+        with:
+            severity: error
+            details: Test Failed!!!
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       
   test-failed-notification:
     needs: [test, test-e2e]
