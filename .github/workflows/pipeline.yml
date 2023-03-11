@@ -54,7 +54,18 @@ jobs:
         with:
           name: dist
           path: dist
-      
+
+  build-failed-notification:
+    needs: [build, lint]
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Build fieled notification
+        uses: rjstone/discord-webhook-notify@v1
+        if: failure()
+        with:
+            severity: error
+            details: Build Failed!!!
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}  
 
   test:
     needs: [build, lint]
@@ -102,6 +113,18 @@ jobs:
           start: npm run start-prod
           wait-on: http://localhost:5000
       
+  test-failed-notification:
+    needs: [test, test-e2e]
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Test fieled notification
+        uses: rjstone/discord-webhook-notify@v1
+        if: failure()
+        with:
+            severity: error
+            details: Test Failed!!!
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+
   simple_deployment_pipeline:
     needs: [test,test-e2e]
     if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message,' '),'#skip')}}
@@ -116,6 +139,18 @@ jobs:
         if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message,' '),'#skip') }}
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+
+  new-deploy-notification:
+    needs: simple_deployment_pipeline
+    runs-on: ubuntu-20.04
+    steps:
+      - name: new deploy notification
+        uses: rjstone/discord-webhook-notify@v1
+        if: success()
+        with:
+            severity: info
+            details: A new version of Pokedex deployed!
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
 
   tag_release:
     needs: [simple_deployment_pipeline]
