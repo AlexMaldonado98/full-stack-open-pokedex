@@ -89,7 +89,7 @@ describe('<PokemonPage />', () => {
       )
     })
 
-    expect(screen.getByText('adaptability')).not.toBeVisible()
+    expect(screen.getByText('adaptability')).toBeVisible()
     expect(screen.getByText('anticipation')).toBeVisible()
   })
 

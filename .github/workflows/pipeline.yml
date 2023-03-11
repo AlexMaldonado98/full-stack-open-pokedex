@@ -121,18 +121,6 @@ jobs:
             severity: error
             details: Test Failed!!!
             webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
-      
-  test-failed-notification:
-    needs: [test, test-e2e]
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Test fieled notification
-        uses: rjstone/discord-webhook-notify@v1
-        if: failure()
-        with:
-            severity: error
-            details: Test Failed!!!
-            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
 
   simple_deployment_pipeline:
     needs: [test,test-e2e]
