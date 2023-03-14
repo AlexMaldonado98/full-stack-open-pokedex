@@ -16,3 +16,10 @@ jobs:
         with:
           # Check the following URLs one by one sequentially
           url: https://pokedex-2023.fly.dev/
+      - name: health check fieled notification
+        uses: rjstone/discord-webhook-notify@v1
+        if: success()
+        with:
+            severity: info
+            details: the app is works!
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
